@@ -1,38 +1,422 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 10px;
+}
+.imghead {
+  width: 50px;
+  height: 50px;
+  background-color: #ededed;
+  border-radius: 25px;
+  margin-right: 12px;
+}
+.title1 {
+  margin-left: 100px;
+  margin-top: 50px;
+  padding: 10px;
+}
+.comp1 {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.subcomp1 {
+  margin-left: 30px;
+}
+.Card {
+  width: 350px;
+}
+.title2 {
+  padding: 0px;
+  margin-top: 60px;
+  margin-left: 120px;
+}
+.comp2 {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.subcomp2 {
+  margin-left: 20px;
+  display: flex;
+  padding: 10px;
+}
+.ColorCard {
+  width: 120;
+  padding: 8px;
+}
+.title3 {
+  padding: 0px;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+.comp3 {
+  display: flex;
+  margin-left: 90px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.subcomp3 {
+  margin-left: 20px;
+}
+.child1 {
+  border-radius: 10px;
+  width: 170px;
+}
+
+.FigureCard {
+  border: 0cap;
+  padding: 10px;
+  width: 170;
+  border-radius: 10px;
+  width: 122px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+}
+
+.child3 {
+  width: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.child4 {
+  text-align: center;
+  padding-bottom: 0%;
+}
+.event {
+  text-decoration: none;
+  padding-top: 0%;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align: center;
+}
+.heading1 {
+  margin-left: 100px;
+}
+.heading2 {
+  margin-left: 5px;
+}
+.heading3 {
+  margin-left: 200px;
+}
+
+.footer-container {
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  margin-top: 130px;
+  display: flex;
+}
+
+.Left-container {
+  width: 650px;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.upper-container {
+  color: white;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.lower-container {
+  color: white;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.right-container {
+  width: 650px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.rightupper-container {
+  color: white;
+  margin-left: 20px;
+  margin-top: 95px;
+}
+
+.rightlower-container {
+  color: white;
+  margin-left: 20px;
+  margin-top: 95px;
+}
+
+.containerleft {
+  width: 700px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.containerright {
+  width: 375px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  display: inline-block;
+  padding-top: 17px;
+}
+.container2 {
+  margin-top: 10px;
+}
+.container {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.navbar {
+  background-color: #373435;
+  cursor: pointer;
+}
+.btn1 {
+  border-radius: 15px;
+  background-color: #373435;
+  color: white;
+  height: 25px;
+  width: 120px;
+  cursor: pointer;
+  border-color: white;
+  border-width: 1px;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.btn1:hover {
+  background-color: white;
+  color: black;
+}
+.btn2:hover {
+  background-color: white;
+  color: black;
+}
+.btn3:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn2 {
+  border-radius: 15px;
+  background-color: #373435;
+  color: white;
+  height: 25px;
+  width: 120px;
+  cursor: pointer;
+  border-color: white;
+  border-width: 1px;
+  margin-right: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.btn3 {
+  border-radius: 15px;
+  background-color: #373435;
+  color: white;
+  height: 25px;
+  width: 100px;
+  cursor: pointer;
+  border-color: white;
+  border-width: 1px;
+  margin-right: 20px;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.txt {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 90px;
+  margin-top: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.txt1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 5px;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.image {
+  background-color: #373435;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  margin-right: 10px;
+  align-items: center;
+  padding-right: 10px;
+  position: relative;
+}
+.img:hover {
+  background-color: black;
+}
+.image1 {
+  display: flex;
+  background-color: #373435;
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+  margin-top: 13px;
+}
+@media only screen and (max-width: 600px) {
+  .imghead {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .headtitle {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 0px;
+    font-size: small;
+  }
+
+  .comp1 {
+    margin-left: 0px;
+    padding-left: 0%;
+    margin: 0px 0px 0px 10px;
+    overflow-x: scroll;
+    scrollbar-width : none;
+    margin-top: 10px;
+  }
+  .title1 {
+    padding: 0px 0px 10px 10px;
+    padding-top: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+  .subcomp1 {
+    margin-left: 5px;
+  }
+  .Card {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .comp2 {
+    margin-left: 0px;
+    padding-left: 0%;
+    padding-top: 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .title2 {
+    padding: 0px 0px 10px 20px;
+    padding-top: 10px;
+    margin: 0px 0px 0px 0px;
+  }
+  .subcomp2 {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+  }
+  .ColorCard {
+    padding: 4px;
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+  .comp3 {
+    margin-left: 0px;
+    padding-left: 0%;
+    margin: 0px 0px 0px 0px;
+    overflow-x: scroll;
+  }
+  .title3 {
+    padding: 0px 0px 10px 0px;
+    padding-top: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+  .subcomp3 {
+    margin-left: 10px;
+  }
+  .leftimg {
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+  }
+  .centerimg {
+    width: 100%;
+    height: 300px;
+    padding-right: 10px;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-top: -60px !important;
+  }
+  .rightimg {
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+  }
+  .head {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .footer-container {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .lower-container {
+    display: none;
+  }
+  .footerimg {
+    width: 50px;
+    height: 50px;
+  }
+  .disp {
+    display: none;
+  }
+  .Left-container {
+    display: none;
+    margin-left: 0px;
+  }
+  .rightupper-container {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .txt {
+    display: none;
+  }
+  .txt1 {
+    display: none;
+  }
+  .btn1 {
+    display: none;
+  }
+  .btn2 {
+    display: none;
+  }
+  .btn3 {
+    display: none;
+  }
+  .image1 {
+    display: none;
+  }
+  .image {
+    padding-left: 60px;
   }
 }
